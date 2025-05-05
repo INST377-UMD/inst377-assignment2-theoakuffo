@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INST377 - Activities</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script defer src="script.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>INST377 - Activities</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="dogs.html">Dogs</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h2>These are some different activities we can try!</h2>
+        
+        <!-- Home Page Buttons styled with Button 73 -->
+        <button class="button-73" onclick="window.location.href='stocks.html'">Stocks</button>
+        <button class="button-73" onclick="window.location.href='dogs.html'">Dogs</button>
+
+        <div id="quoteBox">
+            <strong>Quote of the Page Load</strong><br><span id="quoteText">Loading...</span>
+        </div>
+
+        <div id="voiceBox">
+            <h3>Audio Navigation Instructions</h3>
+            <p>Say "navigate to home/stocks/dogs", "change the color to blue/red/etc", or "hello"</p>
+            <button class="button" onclick="startListening()">Turn On Listening</button>
+            <button class="button" onclick="stopListening()">Turn Off Listening</button>
+        </div>
+    </div>
+</body>
+</html>
+
